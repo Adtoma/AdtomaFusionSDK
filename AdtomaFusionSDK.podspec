@@ -11,9 +11,8 @@ Pod::Spec.new do |s|
   s.platform              = :ios
   s.requires_arc          = true
   s.source                = { :git => "https://github.com/mysza/AdtomaFusionSDK.git", :tag => "1.8.0" }
-  s.vendored_frameworks   = 'AdtomaFusionSDK.framework'
   s.vendored_libraries    = 'AdtomaFusionSDK.a'
-  s.resource              = 'AdtomaFusionSDK.bundle'
+  s.resources             = 'AdtomaFusionSDK.bundle'
   s.frameworks            = 'CoreFoundation', 'CoreGraphics', 'UIKit', 'Foundation'
   s.dependency            'PureLayout', '~> 3.0'
   s.dependency            'UIAlertView+Blocks', '~> 0.9'
