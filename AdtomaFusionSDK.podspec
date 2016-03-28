@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.author                = { "Adtoma AB" => "support@adtoma.com" }
   s.platform              = :ios
   s.requires_arc          = true
+  s.public_header_files   = 'AdtomaFusionSDKHeaders/*.h'
   s.source                = { :git => "https://github.com/mysza/AdtomaFusionSDK.git", :tag => "1.8.0" }
   s.vendored_libraries    = 'AdtomaFusionSDK.a'
   s.resources             = 'AdtomaFusionSDK.bundle'
