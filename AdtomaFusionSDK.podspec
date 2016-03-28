@@ -12,7 +12,10 @@ Pod::Spec.new do |s|
   s.requires_arc          = true
   s.public_header_files   = 'AdtomaFusionSDKHeaders/*.h'
   s.source                = { :git => "https://github.com/mysza/AdtomaFusionSDK.git", :tag => "1.8.0" }
-  s.vendored_libraries    = 'AdtomaFusionSDK.a'
+  s.library               = 'AdtomaFusionSDK'
+  s.xcconfig              =  { 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/AdtomaFusionSDK' }
+  s.preserve_paths        = 'libAdtomaFusionSDK.a'
+  s.preserve_paths        = 'AdtomaFusionSDK.a'
   s.resources             = 'AdtomaFusionSDK.bundle'
   s.frameworks            = 'CoreFoundation', 'CoreGraphics', 'UIKit', 'Foundation'
   s.dependency            'PureLayout', '~> 3.0'
