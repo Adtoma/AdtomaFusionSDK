@@ -6,11 +6,12 @@ Pod::Spec.new do |s|
                           The Adtoma Fusion SDK for iOS is an iOS framework (library) that allows iOS application developers to display ads served by the Adtoma Fusion ad management system in their applications. The SDK is MRAID compatible (see [Mobile Rich Media Ad Interface Definitions (MRAID)](http://www.iab.net/mraid)).
                           DESC
   s.homepage              = "http://www.adtoma.com"
-  s.license               = 'Commercial'
+  s.license               = { :type => 'Commercial', :file => 'LICENSE.md' }
   s.author                = { "Adtoma AB" => "support@adtoma.com" }
   s.platform              = :ios
   s.requires_arc          = true
-  s.vendored_frameworks   = 'AdtomaFusionSDK.frameowrk'
+  s.source                = { :git => "https://github.com/mysza/AdtomaFusionSDK.git", :tag => "1.8.0" }
+  s.vendored_frameworks   = 'AdtomaFusionSDK.framework'
   s.vendored_libraries    = 'AdtomaFusionSDK.a'
   s.resource              = 'AdtomaFusionSDK.bundle'
   s.frameworks            = 'CoreFoundation', 'CoreGraphics', 'UIKit', 'Foundation'
