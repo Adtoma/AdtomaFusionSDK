@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
   s.source                = { :git => "https://github.com/mysza/AdtomaFusionSDK.git", :branch => 'master' }
   s.requires_arc          = true
   s.source_files          = 'AdtomaFusionSDKHeaders/*.h'
-  s.vendored_library      = 'AdtomaFusionSDK.a'
-  # s.preserve_paths        = 'AdtomaFusionSDK.a'
+  s.library               = 'AdtomaFusionSDK.a'
+  s.preserve_paths        = 'AdtomaFusionSDK.a'
   s.public_header_files   = 'AdtomaFusionSDKHeaders/*.h'
   s.resources             = 'AdtomaFusionSDK.bundle'
   s.xcconfig              = { 'LIBRARY_SEARCH_PATHS' => "'${PODS_ROOT}/AdtomaFusionSDK/'" }
