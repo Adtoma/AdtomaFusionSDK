@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license               = { :type => 'Commercial', :file => 'LICENSE.md' }
   s.author                = { "Adtoma AB" => "support@adtoma.com" }
   s.platform              = :ios
-  s.source                = { :git => "https://github.com/mysza/AdtomaFusionSDK.git", :tag => "1.8.0" }
+  s.source                = { :git => "https://github.com/mysza/AdtomaFusionSDK.git", :branch => 'master' }
   s.requires_arc          = true
   s.source_files          = 'AdtomaFusionSDKHeaders/*.h'
   s.public_header_files   = 'AdtomaFusionSDKHeaders/*.h'
