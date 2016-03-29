@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.preserve_paths        = 'AdtomaFusionSDK.a'
   s.public_header_files   = 'AdtomaFusionSDKHeaders/*.h'
   s.resources             = 'AdtomaFusionSDK.bundle'
-  s.xcconfig              = { 'LIBRARY_SEARCH_PATHS' => "$(SRCROOT)/Pods/**" }
+  s.xcconfig              = { 'LIBRARY_SEARCH_PATHS' => "${PODS_ROOT}/AdtomaFusionSDK/" }
   s.frameworks            = 'CoreFoundation', 'CoreGraphics', 'UIKit', 'Foundation'
   s.dependency            'PureLayout', '~> 3.0'
   s.dependency            'UIAlertView+Blocks', '~> 0.9'
