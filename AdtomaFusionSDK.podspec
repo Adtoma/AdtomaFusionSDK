@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.source_files          = 'AdtomaFusionSDKHeaders/*.h'
   s.public_header_files   = 'AdtomaFusionSDKHeaders/*.h'
   s.vendored_libraries    = 'AdtomaFusionSDK.a'
+  s.preserve_paths        = 'AdtomaFusionSDK.a'
   s.resources             = 'AdtomaFusionSDK.bundle'
   s.frameworks            = 'CoreFoundation', 'CoreGraphics', 'UIKit', 'Foundation'
   s.dependency            'PureLayout', '~> 3.0'
