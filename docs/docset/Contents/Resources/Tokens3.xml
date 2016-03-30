@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/AFPlacementType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/AFPlacementType</TokenIdentifier>
+			<Abstract type="html">The placement type of the ad.</Abstract>
+			<DeclaredIn>AFPlacementType.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kAFPlacementInterstitial</TokenIdentifier>
+            <Abstract type="html">The ad is an interstitial ad, which means it covers all screen and is not used for resize or expand.</Abstract>
+            <Declaration>kAFPlacementInterstitial</Declaration>
+            
+            <DeclaredIn>AFPlacementType.h</DeclaredIn>
+            
+            <NodeRef refid="3"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kAFPlacementInline</TokenIdentifier>
+            <Abstract type="html">The ad is an inline ad, which means it is surrounded by usual application content. Such ads can resize and expand, if the creative use MRAID methods provided by the SDK.
+     </Abstract>
+            <Declaration>kAFPlacementInline</Declaration>
+            
+            <DeclaredIn>AFPlacementType.h</DeclaredIn>
+            
+            <NodeRef refid="3"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,2300 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>AFAdViewDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Adtoma Fusion SDK (iOS) </a></h1>
+				<a id="developerHome" href="../index.html">Adtoma AB</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">AFAdViewDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/adView:allowsOrientationChange:">&nbsp;&nbsp;&nbsp;&nbsp;- adView:allowsOrientationChange:</option>
+	
+	<option value="//api/name/adView:didCloseBrowserWithUrl:">&nbsp;&nbsp;&nbsp;&nbsp;- adView:didCloseBrowserWithUrl:</option>
+	
+	<option value="//api/name/adView:didLoadAd:withCreativeSize:">&nbsp;&nbsp;&nbsp;&nbsp;- adView:didLoadAd:withCreativeSize:</option>
+	
+	<option value="//api/name/adView:didResizeTo:">&nbsp;&nbsp;&nbsp;&nbsp;- adView:didResizeTo:</option>
+	
+	<option value="//api/name/adView:didResizeToCreativeSize:">&nbsp;&nbsp;&nbsp;&nbsp;- adView:didResizeToCreativeSize:</option>
+	
+	<option value="//api/name/adView:didStopMediaWithUrl:inline:">&nbsp;&nbsp;&nbsp;&nbsp;- adView:didStopMediaWithUrl:inline:</option>
+	
+	<option value="//api/name/adView:failedCreatingCalendarEvent:">&nbsp;&nbsp;&nbsp;&nbsp;- adView:failedCreatingCalendarEvent:</option>
+	
+	<option value="//api/name/adView:forcesOrientation:">&nbsp;&nbsp;&nbsp;&nbsp;- adView:forcesOrientation:</option>
+	
+	<option value="//api/name/adView:receivedError:">&nbsp;&nbsp;&nbsp;&nbsp;- adView:receivedError:</option>
+	
+	<option value="//api/name/adView:receivedInfo:">&nbsp;&nbsp;&nbsp;&nbsp;- adView:receivedInfo:</option>
+	
+	<option value="//api/name/adView:willCreateCalendarEvent:">&nbsp;&nbsp;&nbsp;&nbsp;- adView:willCreateCalendarEvent:</option>
+	
+	<option value="//api/name/adView:willOpenBrowserWithUrl:inExternalBrowser:">&nbsp;&nbsp;&nbsp;&nbsp;- adView:willOpenBrowserWithUrl:inExternalBrowser:</option>
+	
+	<option value="//api/name/adView:willResizeTo:">&nbsp;&nbsp;&nbsp;&nbsp;- adView:willResizeTo:</option>
+	
+	<option value="//api/name/adView:willResizeToCreativeSize:withAnimation:">&nbsp;&nbsp;&nbsp;&nbsp;- adView:willResizeToCreativeSize:withAnimation:</option>
+	
+	<option value="//api/name/adView:willStartMediaWithUrl:inline:">&nbsp;&nbsp;&nbsp;&nbsp;- adView:willStartMediaWithUrl:inline:</option>
+	
+	<option value="//api/name/adViewController">&nbsp;&nbsp;&nbsp;&nbsp;- adViewController</option>
+	
+	<option value="//api/name/adViewDidClose:">&nbsp;&nbsp;&nbsp;&nbsp;- adViewDidClose:</option>
+	
+	<option value="//api/name/adViewDidCloseExpandedView:">&nbsp;&nbsp;&nbsp;&nbsp;- adViewDidCloseExpandedView:</option>
+	
+	<option value="//api/name/adViewDidDismissCalendarEventCreator:">&nbsp;&nbsp;&nbsp;&nbsp;- adViewDidDismissCalendarEventCreator:</option>
+	
+	<option value="//api/name/adViewDidExpand:">&nbsp;&nbsp;&nbsp;&nbsp;- adViewDidExpand:</option>
+	
+	<option value="//api/name/adViewReceivedNoAd:">&nbsp;&nbsp;&nbsp;&nbsp;- adViewReceivedNoAd:</option>
+	
+	<option value="//api/name/adViewWillClose:">&nbsp;&nbsp;&nbsp;&nbsp;- adViewWillClose:</option>
+	
+	<option value="//api/name/adViewWillCloseExpandedView:">&nbsp;&nbsp;&nbsp;&nbsp;- adViewWillCloseExpandedView:</option>
+	
+	<option value="//api/name/adViewWillExpand:">&nbsp;&nbsp;&nbsp;&nbsp;- adViewWillExpand:</option>
+	
+	<option value="//api/name/adViewWillLoadAd:">&nbsp;&nbsp;&nbsp;&nbsp;- adViewWillLoadAd:</option>
+	
+	<option value="//api/name/appShouldResumeFromAdView:">&nbsp;&nbsp;&nbsp;&nbsp;- appShouldResumeFromAdView:</option>
+	
+	<option value="//api/name/appShouldSuspendForAdView:">&nbsp;&nbsp;&nbsp;&nbsp;- appShouldSuspendForAdView:</option>
+	
+	<option value="//api/name/shallSupportCalendar">&nbsp;&nbsp;&nbsp;&nbsp;- shallSupportCalendar</option>
+	
+	<option value="//api/name/shallSupportInlineVideo">&nbsp;&nbsp;&nbsp;&nbsp;- shallSupportInlineVideo</option>
+	
+	<option value="//api/name/shallSupportSMS">&nbsp;&nbsp;&nbsp;&nbsp;- shallSupportSMS</option>
+	
+	<option value="//api/name/shallSupportStorePicture">&nbsp;&nbsp;&nbsp;&nbsp;- shallSupportStorePicture</option>
+	
+	<option value="//api/name/shallSupportTel">&nbsp;&nbsp;&nbsp;&nbsp;- shallSupportTel</option>
+	
+	<option value="//api/name/webViewDelegate">&nbsp;&nbsp;&nbsp;&nbsp;- webViewDelegate</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Required properties">Required properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_UIWebViewDelegate">UIWebViewDelegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Adtoma Fusion specific notifications">Adtoma Fusion specific notifications</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Fullscreen notifications">Fullscreen notifications</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_MRAID specific notifications">MRAID specific notifications</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adView:allowsOrientationChange:">adView:allowsOrientationChange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adView:didCloseBrowserWithUrl:">adView:didCloseBrowserWithUrl:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adView:didLoadAd:withCreativeSize:">adView:didLoadAd:withCreativeSize:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adView:didResizeTo:">adView:didResizeTo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adView:didResizeToCreativeSize:">adView:didResizeToCreativeSize:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adView:didStopMediaWithUrl:inline:">adView:didStopMediaWithUrl:inline:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adView:failedCreatingCalendarEvent:">adView:failedCreatingCalendarEvent:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adView:forcesOrientation:">adView:forcesOrientation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adView:receivedError:">adView:receivedError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adView:receivedInfo:">adView:receivedInfo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adView:willCreateCalendarEvent:">adView:willCreateCalendarEvent:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adView:willOpenBrowserWithUrl:inExternalBrowser:">adView:willOpenBrowserWithUrl:inExternalBrowser:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adView:willResizeTo:">adView:willResizeTo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adView:willResizeToCreativeSize:withAnimation:">adView:willResizeToCreativeSize:withAnimation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adView:willStartMediaWithUrl:inline:">adView:willStartMediaWithUrl:inline:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adViewController">adViewController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adViewDidClose:">adViewDidClose:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adViewDidCloseExpandedView:">adViewDidCloseExpandedView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adViewDidDismissCalendarEventCreator:">adViewDidDismissCalendarEventCreator:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adViewDidExpand:">adViewDidExpand:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adViewReceivedNoAd:">adViewReceivedNoAd:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adViewWillClose:">adViewWillClose:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adViewWillCloseExpandedView:">adViewWillCloseExpandedView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adViewWillExpand:">adViewWillExpand:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adViewWillLoadAd:">adViewWillLoadAd:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appShouldResumeFromAdView:">appShouldResumeFromAdView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appShouldSuspendForAdView:">appShouldSuspendForAdView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shallSupportCalendar">shallSupportCalendar</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shallSupportInlineVideo">shallSupportInlineVideo</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shallSupportSMS">shallSupportSMS</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shallSupportStorePicture">shallSupportStorePicture</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shallSupportTel">shallSupportTel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/webViewDelegate">webViewDelegate</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="AFAdViewDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">AFAdViewDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">AFAdViewDelegate.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>During the Fusion ad load and usage, the <a href="../Classes/AFAdView.html">AFAdView</a> can notify object conforming to the AFAdViewDelegate protocol about various events triggered during ad load or during user interaction with the ad.</p>
+
+<p>The ad view behavior can also be controlled by returing specific values from some of the notification methods.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Required properties" name="task_Required properties"></a>
+						<h3 class="subsubtitle task-title">Required properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adViewController">&ndash;&nbsp;adViewController</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+						
+						<a title="UIWebViewDelegate" name="task_UIWebViewDelegate"></a>
+						<h3 class="subsubtitle task-title">UIWebViewDelegate</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/webViewDelegate">&ndash;&nbsp;webViewDelegate</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Adtoma Fusion specific notifications" name="task_Adtoma Fusion specific notifications"></a>
+						<h3 class="subsubtitle task-title">Adtoma Fusion specific notifications</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adViewWillLoadAd:">&ndash;&nbsp;adViewWillLoadAd:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adView:didLoadAd:withCreativeSize:">&ndash;&nbsp;adView:didLoadAd:withCreativeSize:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adViewReceivedNoAd:">&ndash;&nbsp;adViewReceivedNoAd:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adView:receivedInfo:">&ndash;&nbsp;adView:receivedInfo:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adView:receivedError:">&ndash;&nbsp;adView:receivedError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adView:willResizeToCreativeSize:withAnimation:">&ndash;&nbsp;adView:willResizeToCreativeSize:withAnimation:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adView:didResizeToCreativeSize:">&ndash;&nbsp;adView:didResizeToCreativeSize:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Fullscreen notifications" name="task_Fullscreen notifications"></a>
+						<h3 class="subsubtitle task-title">Fullscreen notifications</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/appShouldSuspendForAdView:">&ndash;&nbsp;appShouldSuspendForAdView:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/appShouldResumeFromAdView:">&ndash;&nbsp;appShouldResumeFromAdView:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="MRAID specific notifications" name="task_MRAID specific notifications"></a>
+						<h3 class="subsubtitle task-title">MRAID specific notifications</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adViewWillClose:">&ndash;&nbsp;adViewWillClose:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adViewDidClose:">&ndash;&nbsp;adViewDidClose:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adView:willOpenBrowserWithUrl:inExternalBrowser:">&ndash;&nbsp;adView:willOpenBrowserWithUrl:inExternalBrowser:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adView:didCloseBrowserWithUrl:">&ndash;&nbsp;adView:didCloseBrowserWithUrl:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adView:willResizeTo:">&ndash;&nbsp;adView:willResizeTo:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adView:didResizeTo:">&ndash;&nbsp;adView:didResizeTo:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adView:willStartMediaWithUrl:inline:">&ndash;&nbsp;adView:willStartMediaWithUrl:inline:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adView:didStopMediaWithUrl:inline:">&ndash;&nbsp;adView:didStopMediaWithUrl:inline:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adView:allowsOrientationChange:">&ndash;&nbsp;adView:allowsOrientationChange:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adView:forcesOrientation:">&ndash;&nbsp;adView:forcesOrientation:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adViewWillExpand:">&ndash;&nbsp;adViewWillExpand:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adViewDidExpand:">&ndash;&nbsp;adViewDidExpand:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adViewWillCloseExpandedView:">&ndash;&nbsp;adViewWillCloseExpandedView:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adViewDidCloseExpandedView:">&ndash;&nbsp;adViewDidCloseExpandedView:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adView:willCreateCalendarEvent:">&ndash;&nbsp;adView:willCreateCalendarEvent:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adViewDidDismissCalendarEventCreator:">&ndash;&nbsp;adViewDidDismissCalendarEventCreator:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adView:failedCreatingCalendarEvent:">&ndash;&nbsp;adView:failedCreatingCalendarEvent:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shallSupportSMS">&ndash;&nbsp;shallSupportSMS</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shallSupportTel">&ndash;&nbsp;shallSupportTel</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shallSupportCalendar">&ndash;&nbsp;shallSupportCalendar</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shallSupportStorePicture">&ndash;&nbsp;shallSupportStorePicture</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shallSupportInlineVideo">&ndash;&nbsp;shallSupportInlineVideo</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/adView:allowsOrientationChange:" title="adView:allowsOrientationChange:"></a>
+	<h3 class="subsubtitle method-title">adView:allowsOrientationChange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification for the application that ad (creative) within the ad view changed the way orientation changes are handled.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)adView:(AFAdView *)<em>adView</em> allowsOrientationChange:(BOOL)<em>allows</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> that received MRAID command.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>allows</em></dt>
+			<dd><p>YES if the ad allows orientation changed (i.e. ad view will change orientation if device orientation change); NO otherwise.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adView:didCloseBrowserWithUrl:" title="adView:didCloseBrowserWithUrl:"></a>
+	<h3 class="subsubtitle method-title">adView:didCloseBrowserWithUrl:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification called after the browser window with external URL opened did close.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)adView:(AFAdView *)<em>adView</em> didCloseBrowserWithUrl:(NSString *)<em>url</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> that had browser opened.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>The URL of the closing browser.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adView:didLoadAd:withCreativeSize:" title="adView:didLoadAd:withCreativeSize:"></a>
+	<h3 class="subsubtitle method-title">adView:didLoadAd:withCreativeSize:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification called after an ad has been loaded.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)adView:(AFAdView *)<em>adView</em> didLoadAd:(NSString *)<em>adId</em> withCreativeSize:(CGSize)<em>creativeSize</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> that loaded the ad.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adId</em></dt>
+			<dd><p>The ID of the loaded ad.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>creativeSize</em></dt>
+			<dd><p>The size of the creative that will be loaded.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adView:didResizeTo:" title="adView:didResizeTo:"></a>
+	<h3 class="subsubtitle method-title">adView:didResizeTo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification called after the <a href="../Classes/AFAdView.html">AFAdView</a> resized after the call to mraid.resize() from the ad creative.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)adView:(AFAdView *)<em>adView</em> didResizeTo:(CGRect)<em>frame</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> that contains the creative that called mraid.resize().</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>frame</em></dt>
+			<dd><p>The frame <a href="../Classes/AFAdView.html">AFAdView</a> resized to; frame is relative to screen</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> See discussion and warning of <a href="#//api/name/adView:willResizeTo:">adView:willResizeTo:</a> method.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adView:didResizeToCreativeSize:" title="adView:didResizeToCreativeSize:"></a>
+	<h3 class="subsubtitle method-title">adView:didResizeToCreativeSize:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification for the application that the ad view has changed its frame.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)adView:(AFAdView *)<em>adView</em> didResizeToCreativeSize:(CGSize)<em>creativeSize</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> that has changed frame.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>creativeSize</em></dt>
+			<dd><p>The size <a href="../Classes/AFAdView.html">AFAdView</a> changed to.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> This callback is different from <a href="#//api/name/adView:didResizeTo:">adView:didResizeTo:</a> - the latter is called only after mraid.resize() method
+is called in the ad creative javascript. This callback is called always after the ad frame changed for any reason.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adView:didStopMediaWithUrl:inline:" title="adView:didStopMediaWithUrl:inline:"></a>
+	<h3 class="subsubtitle method-title">adView:didStopMediaWithUrl:inline:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification called after the video url was stopped/closed, or when inline video stops/pauses and the creative
+implementation calls Fusion.SDK.inlineMediaDidStop.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)adView:(AFAdView *)<em>adView</em> didStopMediaWithUrl:(NSString *)<em>url</em> inline:(BOOL)<em>isInline</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> that was playing the video.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>The video URL.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>isInline</em></dt>
+			<dd><p>Indicates whether the event was fired by the mraid.playVideo method (value is NO), or if it was called directly by the creative (value is YES)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adView:failedCreatingCalendarEvent:" title="adView:failedCreatingCalendarEvent:"></a>
+	<h3 class="subsubtitle method-title">adView:failedCreatingCalendarEvent:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification for the application that the ad view failed to create a calendar event.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)adView:(AFAdView *)<em>adView</em> failedCreatingCalendarEvent:(NSString *)<em>errorMessage</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> that tried to create calendar event.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorMessage</em></dt>
+			<dd><p>Error message.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adView:forcesOrientation:" title="adView:forcesOrientation:"></a>
+	<h3 class="subsubtitle method-title">adView:forcesOrientation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification for the application that ad (creative) within the ad view forces orientation of the ad view regardless of the device orientation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)adView:(AFAdView *)<em>adView</em> forcesOrientation:(UIInterfaceOrientationMask)<em>orientation</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> that received MRAID command.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>orientation</em></dt>
+			<dd><p>The forced orientation.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adView:receivedError:" title="adView:receivedError:"></a>
+	<h3 class="subsubtitle method-title">adView:receivedError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification called after error message from SDK javascript was received.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)adView:(AFAdView *)<em>adView</em> receivedError:(NSString *)<em>message</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> that received error message.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>message</em></dt>
+			<dd><p>The error message received.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Receiving error does not necesarily mean that the ad will not load. If adView:didLoadAd: method was called, it means the ad will be loaded despite any errors that might be received from the javascript.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adView:receivedInfo:" title="adView:receivedInfo:"></a>
+	<h3 class="subsubtitle method-title">adView:receivedInfo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification called after info message from SDK javascript was received.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)adView:(AFAdView *)<em>adView</em> receivedInfo:(NSString *)<em>message</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> that received info message.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>message</em></dt>
+			<dd><p>The message received from javascript.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adView:willCreateCalendarEvent:" title="adView:willCreateCalendarEvent:"></a>
+	<h3 class="subsubtitle method-title">adView:willCreateCalendarEvent:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification for the application that the ad wants to create a calenar event.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)adView:(AFAdView *)<em>adView</em> willCreateCalendarEvent:(EKEvent *)<em>event</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> that wants to create calendar event.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>event</em></dt>
+			<dd><p>The event that ad view wants to create.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the application wants to allow creating calendar event; NO otherwise.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adView:willOpenBrowserWithUrl:inExternalBrowser:" title="adView:willOpenBrowserWithUrl:inExternalBrowser:"></a>
+	<h3 class="subsubtitle method-title">adView:willOpenBrowserWithUrl:inExternalBrowser:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification called before the ad will open a browser window with external URL (through mraid.open()).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)adView:(AFAdView *)<em>adView</em> willOpenBrowserWithUrl:(NSString *)<em>url</em> inExternalBrowser:(BOOL)<em>externalBrowser</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> that will open browser window.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>The URL that will be opened.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>externalBrowser</em></dt>
+			<dd><p>Flag indicating how the ad view is planning to open a URL; YES means it will open in external browser, NO means it will open in ad view&rsquo;s internal browser (will not leave the application)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the client wants to allow opening the browser window; NO if the ad should not open external URL.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adView:willResizeTo:" title="adView:willResizeTo:"></a>
+	<h3 class="subsubtitle method-title">adView:willResizeTo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification called after mraid.resize() method was executed in ad creative.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)adView:(AFAdView *)<em>adView</em> willResizeTo:(CGRect)<em>frame</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> that contains the creative that wants to resize.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>frame</em></dt>
+			<dd><p>The frame <a href="../Classes/AFAdView.html">AFAdView</a> wants to resize to; frame is relative to screen.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the application allows the creative to resize to desired frame; NO otherwise.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> This method is different from adView:willAnimateTo:. This method is only called after mraid.rasize() method
+was invoked in the ad creative javascript, and after YES is returned (or callback not implemented), when the ad will change its frame,
+adView:willAnimateTo: will be called.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adView:willResizeToCreativeSize:withAnimation:" title="adView:willResizeToCreativeSize:withAnimation:"></a>
+	<h3 class="subsubtitle method-title">adView:willResizeToCreativeSize:withAnimation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification for the application that the ad view will change its frame (for example after the ad creative size changed).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)adView:(AFAdView *)<em>adView</em> willResizeToCreativeSize:(CGSize)<em>creativeSize</em> withAnimation:(BOOL)<em>animated</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> that will change frame.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>creativeSize</em></dt>
+			<dd><p>The of the creative that the <a href="../Classes/AFAdView.html">AFAdView</a> will resize to.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animated</em></dt>
+			<dd><p>YES if animation is allowed, NO otherwise (see <a href="../Classes/AFAdView.html">AFAdView</a>.animateResize property).</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the application allows the ad view to resize; NO otherwise.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> This callback is different from <a href="#//api/name/adView:willResizeTo:">adView:willResizeTo:</a> - the latter is called only after mraid.resize() method
+is called in the ad creative javascript. This callback is called always when for any reason ad size will change.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adView:willStartMediaWithUrl:inline:" title="adView:willStartMediaWithUrl:inline:"></a>
+	<h3 class="subsubtitle method-title">adView:willStartMediaWithUrl:inline:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification called before media will be started (called through mraid.playVideo()), or when inline video starts and
+the creative implementation calls Fusion.SDK.inlineMediaWillStart.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)adView:(AFAdView *)<em>adView</em> willStartMediaWithUrl:(NSString *)<em>url</em> inline:(BOOL)<em>isInline</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> that received request to play video.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>The video URL.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>isInline</em></dt>
+			<dd><p>Indicates whether the event was fired by the mraid.playVideo method (value is NO), or if it was called directly by the creative (value is YES)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the client wants to allow opening the video player and play the video; NO otherwise.</p>
+
+<p>WARNING: returning NO has no effect on inline videos (will play regardless of returned value).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adViewController" title="adViewController"></a>
+	<h3 class="subsubtitle method-title">adViewController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The UIViewController that is the parent of the <a href="../Classes/AFAdView.html">AFAdView</a>. The controller can be used by MRAID compatible ads for displaying external browser windows, playing video files etc.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UIViewController *)adViewController</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>UIViewController - parent of the <a href="../Classes/AFAdView.html">AFAdView</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adViewDidClose:" title="adViewDidClose:"></a>
+	<h3 class="subsubtitle method-title">adViewDidClose:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification called after the ad has closed.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)adViewDidClose:(AFAdView *)<em>adView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> that was closed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adViewDidCloseExpandedView:" title="adViewDidCloseExpandedView:"></a>
+	<h3 class="subsubtitle method-title">adViewDidCloseExpandedView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification for the application that the ad did close the expanded, full screen view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)adViewDidCloseExpandedView:(AFAdView *)<em>adView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> that had closed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adViewDidDismissCalendarEventCreator:" title="adViewDidDismissCalendarEventCreator:"></a>
+	<h3 class="subsubtitle method-title">adViewDidDismissCalendarEventCreator:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification for the application that the calendar event creation screen was dismissed.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)adViewDidDismissCalendarEventCreator:(AFAdView *)<em>adView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> object that brought the calendar event creator dialog.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The fact that the calendar event creator was dismissed does not necessarily mean that the event was created.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adViewDidExpand:" title="adViewDidExpand:"></a>
+	<h3 class="subsubtitle method-title">adViewDidExpand:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification for the application that the ad view expanded to full screen view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)adViewDidExpand:(AFAdView *)<em>adView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> that expanded to full screen.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adViewReceivedNoAd:" title="adViewReceivedNoAd:"></a>
+	<h3 class="subsubtitle method-title">adViewReceivedNoAd:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification called in case the <a href="../Classes/AFAdView.html">AFAdView</a> instance received no ad for the call.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)adViewReceivedNoAd:(AFAdView *)<em>adView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> that was loading the ad.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adViewWillClose:" title="adViewWillClose:"></a>
+	<h3 class="subsubtitle method-title">adViewWillClose:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification called before the ad will close.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)adViewWillClose:(AFAdView *)<em>adView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> that will close.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return YES if the client allows closing the ad, NO if the ad should not close.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adViewWillCloseExpandedView:" title="adViewWillCloseExpandedView:"></a>
+	<h3 class="subsubtitle method-title">adViewWillCloseExpandedView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification for the application that the ad will close the expanded, full screen view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)adViewWillCloseExpandedView:(AFAdView *)<em>adView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> that will close (will change size to default/initial).</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adViewWillExpand:" title="adViewWillExpand:"></a>
+	<h3 class="subsubtitle method-title">adViewWillExpand:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification for the application that the ad view will expand to full screen view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)adViewWillExpand:(AFAdView *)<em>adView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> that will expand.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the application wants to allow expanding of the ad view; NO otherwise.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adViewWillLoadAd:" title="adViewWillLoadAd:"></a>
+	<h3 class="subsubtitle method-title">adViewWillLoadAd:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification called before the ad view will load ad.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)adViewWillLoadAd:(AFAdView *)<em>adView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> that will load the ad.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/appShouldResumeFromAdView:" title="appShouldResumeFromAdView:"></a>
+	<h3 class="subsubtitle method-title">appShouldResumeFromAdView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification for the application that it should resume from suspended state, as the ad view is done with activity
+that prevented user from using the application.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)appShouldResumeFromAdView:(AFAdView *)<em>adView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> that wants the application to resume.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/appShouldSuspendForAdView:" title="appShouldSuspendForAdView:"></a>
+	<h3 class="subsubtitle method-title">appShouldSuspendForAdView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notification for the applicatoin that it should suspend, as the ad view will start activity that will not
+allow user to interact with the application.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)appShouldSuspendForAdView:(AFAdView *)<em>adView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adView</em></dt>
+			<dd><p>The <a href="../Classes/AFAdView.html">AFAdView</a> that wants the application to suspend.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shallSupportCalendar" title="shallSupportCalendar"></a>
+	<h3 class="subsubtitle method-title">shallSupportCalendar</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Implement this method if you want to override the detected calendar support of the device.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)shallSupportCalendar</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>If YES is returned, the ad view checks also if the device supports calendar, and returns the result of the test to the ad;
+if NO is returned, the ad view does not inspect the device for calendar support and returns NO to the javascript (creative).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shallSupportInlineVideo" title="shallSupportInlineVideo"></a>
+	<h3 class="subsubtitle method-title">shallSupportInlineVideo</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Implement this method if you want to override the detected video support of the device.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)shallSupportInlineVideo</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>If YES is returned, the ad view checks also if the device supports video play, and returns the result of the test to the ad;
+if NO is returned, the ad view does not inspect the device for video play support and returns NO to the javascript (creative).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shallSupportSMS" title="shallSupportSMS"></a>
+	<h3 class="subsubtitle method-title">shallSupportSMS</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Implement this method if you want to override the detected SMS support of the device.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)shallSupportSMS</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>If YES is returned, the ad view checks also if the device supports SMS, and returns the result of the test to the ad;
+if NO is returned, the ad view does not inspect the device for SMS support and returns NO to the javascript (creative).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shallSupportStorePicture" title="shallSupportStorePicture"></a>
+	<h3 class="subsubtitle method-title">shallSupportStorePicture</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Implement this method if you want to override the detected picture storage support of the device.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)shallSupportStorePicture</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>If YES is returned, the ad view checks also if the device supports picture storage, and returns the result of the test to the ad;
+if NO is returned, the ad view does not inspect the device for picture storage support and returns NO to the javascript (creative).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shallSupportTel" title="shallSupportTel"></a>
+	<h3 class="subsubtitle method-title">shallSupportTel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Implement this method if you want to override the detected phone support of the device.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)shallSupportTel</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>If YES is returned, the ad view checks also if the device supports phone, and returns the result of the test to the ad;
+if NO is returned, the ad view does not inspect the device for phone support and returns NO to the javascript (creative).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/webViewDelegate" title="webViewDelegate"></a>
+	<h3 class="subsubtitle method-title">webViewDelegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If AFAdViewDelegate responds to webViewDelegate: selector, and returns object conforming to UIWebViewDelegate, that object will be notified about
+events from web view displaying the ad creative (if according selectors are implemented).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;UIWebViewDelegate&gt;)webViewDelegate</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Object conforming to UIWebViewDelegate that will be notified about web view events.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFAdViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+                    
+                    
+
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2016 Adtoma AB. All rights reserved. (Last updated: 2016-03-30)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

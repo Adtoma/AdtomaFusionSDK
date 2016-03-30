@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/AFAdViewDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/AFAdViewDelegate</TokenIdentifier>
+			<Abstract type="html">During the Fusion ad load and usage, the AFAdView can notify object conforming to the AFAdViewDelegate protocol about various events triggered during ad load or during user interaction with the ad.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/adViewController</TokenIdentifier>
+			<Abstract type="html">The UIViewController that is the parent of the AFAdView. The controller can be used by MRAID compatible ads for displaying external browser windows, playing video files etc.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (UIViewController *)adViewController</Declaration>
+			
+			<ReturnValue><Abstract type="html">UIViewController - parent of the AFAdView</Abstract></ReturnValue>
+			<Anchor>//api/name/adViewController</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/webViewDelegate</TokenIdentifier>
+			<Abstract type="html">If AFAdViewDelegate responds to webViewDelegate: selector, and returns object conforming to UIWebViewDelegate, that object will be notified about
+events from web view displaying the ad creative (if according selectors are implemented).</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (id&lt;UIWebViewDelegate&gt;)webViewDelegate</Declaration>
+			
+			<ReturnValue><Abstract type="html">Object conforming to UIWebViewDelegate that will be notified about web view events.</Abstract></ReturnValue>
+			<Anchor>//api/name/webViewDelegate</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/adViewWillLoadAd:</TokenIdentifier>
+			<Abstract type="html">Notification called before the ad view will load ad.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)adViewWillLoadAd:(AFAdView *)adView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView that will load the ad.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/adViewWillLoadAd:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/adView:didLoadAd:withCreativeSize:</TokenIdentifier>
+			<Abstract type="html">Notification called after an ad has been loaded.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)adView:(AFAdView *)adView didLoadAd:(NSString *)adId withCreativeSize:(CGSize)creativeSize</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView that loaded the ad.</Abstract>
+				</Parameter><Parameter>
+					<Name>adId</Name>
+					<Abstract type="html">The ID of the loaded ad.</Abstract>
+				</Parameter><Parameter>
+					<Name>creativeSize</Name>
+					<Abstract type="html">The size of the creative that will be loaded.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/adView:didLoadAd:withCreativeSize:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/adViewReceivedNoAd:</TokenIdentifier>
+			<Abstract type="html">Notification called in case the AFAdView instance received no ad for the call.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)adViewReceivedNoAd:(AFAdView *)adView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView that was loading the ad.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/adViewReceivedNoAd:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/adView:receivedInfo:</TokenIdentifier>
+			<Abstract type="html">Notification called after info message from SDK javascript was received.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)adView:(AFAdView *)adView receivedInfo:(NSString *)message</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView that received info message.</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The message received from javascript.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/adView:receivedInfo:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/adView:receivedError:</TokenIdentifier>
+			<Abstract type="html">Notification called after error message from SDK javascript was received.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)adView:(AFAdView *)adView receivedError:(NSString *)message</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView that received error message.</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The error message received.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/adView:receivedError:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/adView:willResizeToCreativeSize:withAnimation:</TokenIdentifier>
+			<Abstract type="html">Notification for the application that the ad view will change its frame (for example after the ad creative size changed).</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)adView:(AFAdView *)adView willResizeToCreativeSize:(CGSize)creativeSize withAnimation:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView that will change frame.</Abstract>
+				</Parameter><Parameter>
+					<Name>creativeSize</Name>
+					<Abstract type="html">The of the creative that the AFAdView will resize to.</Abstract>
+				</Parameter><Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">YES if animation is allowed, NO otherwise (see AFAdView.animateResize property).</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the application allows the ad view to resize; NO otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/adView:willResizeToCreativeSize:withAnimation:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/adView:didResizeToCreativeSize:</TokenIdentifier>
+			<Abstract type="html">Notification for the application that the ad view has changed its frame.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)adView:(AFAdView *)adView didResizeToCreativeSize:(CGSize)creativeSize</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView that has changed frame.</Abstract>
+				</Parameter><Parameter>
+					<Name>creativeSize</Name>
+					<Abstract type="html">The size AFAdView changed to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/adView:didResizeToCreativeSize:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/appShouldSuspendForAdView:</TokenIdentifier>
+			<Abstract type="html">Notification for the applicatoin that it should suspend, as the ad view will start activity that will not
+allow user to interact with the application.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)appShouldSuspendForAdView:(AFAdView *)adView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView that wants the application to suspend.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/appShouldSuspendForAdView:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/appShouldResumeFromAdView:</TokenIdentifier>
+			<Abstract type="html">Notification for the application that it should resume from suspended state, as the ad view is done with activity
+that prevented user from using the application.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)appShouldResumeFromAdView:(AFAdView *)adView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView that wants the application to resume.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/appShouldResumeFromAdView:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/adViewWillClose:</TokenIdentifier>
+			<Abstract type="html">Notification called before the ad will close.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)adViewWillClose:(AFAdView *)adView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView that will close.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Return YES if the client allows closing the ad, NO if the ad should not close.</Abstract></ReturnValue>
+			<Anchor>//api/name/adViewWillClose:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/adViewDidClose:</TokenIdentifier>
+			<Abstract type="html">Notification called after the ad has closed.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)adViewDidClose:(AFAdView *)adView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView that was closed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/adViewDidClose:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/adView:willOpenBrowserWithUrl:inExternalBrowser:</TokenIdentifier>
+			<Abstract type="html">Notification called before the ad will open a browser window with external URL (through mraid.open()).</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)adView:(AFAdView *)adView willOpenBrowserWithUrl:(NSString *)url inExternalBrowser:(BOOL)externalBrowser</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView that will open browser window.</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The URL that will be opened.</Abstract>
+				</Parameter><Parameter>
+					<Name>externalBrowser</Name>
+					<Abstract type="html">Flag indicating how the ad view is planning to open a URL; YES means it will open in external browser, NO means it will open in ad view&apos;s internal browser (will not leave the application)</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the client wants to allow opening the browser window; NO if the ad should not open external URL.</Abstract></ReturnValue>
+			<Anchor>//api/name/adView:willOpenBrowserWithUrl:inExternalBrowser:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/adView:didCloseBrowserWithUrl:</TokenIdentifier>
+			<Abstract type="html">Notification called after the browser window with external URL opened did close.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)adView:(AFAdView *)adView didCloseBrowserWithUrl:(NSString *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView that had browser opened.</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The URL of the closing browser.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/adView:didCloseBrowserWithUrl:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/adView:willResizeTo:</TokenIdentifier>
+			<Abstract type="html">Notification called after mraid.resize() method was executed in ad creative.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)adView:(AFAdView *)adView willResizeTo:(CGRect)frame</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView that contains the creative that wants to resize.</Abstract>
+				</Parameter><Parameter>
+					<Name>frame</Name>
+					<Abstract type="html">The frame AFAdView wants to resize to; frame is relative to screen.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the application allows the creative to resize to desired frame; NO otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/adView:willResizeTo:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/adView:didResizeTo:</TokenIdentifier>
+			<Abstract type="html">Notification called after the AFAdView resized after the call to mraid.resize() from the ad creative.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)adView:(AFAdView *)adView didResizeTo:(CGRect)frame</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView that contains the creative that called mraid.resize().</Abstract>
+				</Parameter><Parameter>
+					<Name>frame</Name>
+					<Abstract type="html">The frame AFAdView resized to; frame is relative to screen</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/adView:didResizeTo:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/adView:willStartMediaWithUrl:inline:</TokenIdentifier>
+			<Abstract type="html">Notification called before media will be started (called through mraid.playVideo()), or when inline video starts and
+the creative implementation calls Fusion.SDK.inlineMediaWillStart.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)adView:(AFAdView *)adView willStartMediaWithUrl:(NSString *)url inline:(BOOL)isInline</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView that received request to play video.</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The video URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>isInline</Name>
+					<Abstract type="html">Indicates whether the event was fired by the mraid.playVideo method (value is NO), or if it was called directly by the creative (value is YES)</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the client wants to allow opening the video player and play the video; NO otherwise.
+
+WARNING: returning NO has no effect on inline videos (will play regardless of returned value).</Abstract></ReturnValue>
+			<Anchor>//api/name/adView:willStartMediaWithUrl:inline:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/adView:didStopMediaWithUrl:inline:</TokenIdentifier>
+			<Abstract type="html">Notification called after the video url was stopped/closed, or when inline video stops/pauses and the creative
+implementation calls Fusion.SDK.inlineMediaDidStop.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)adView:(AFAdView *)adView didStopMediaWithUrl:(NSString *)url inline:(BOOL)isInline</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView that was playing the video.</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The video URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>isInline</Name>
+					<Abstract type="html">Indicates whether the event was fired by the mraid.playVideo method (value is NO), or if it was called directly by the creative (value is YES)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/adView:didStopMediaWithUrl:inline:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/adView:allowsOrientationChange:</TokenIdentifier>
+			<Abstract type="html">Notification for the application that ad (creative) within the ad view changed the way orientation changes are handled.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)adView:(AFAdView *)adView allowsOrientationChange:(BOOL)allows</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView that received MRAID command.</Abstract>
+				</Parameter><Parameter>
+					<Name>allows</Name>
+					<Abstract type="html">YES if the ad allows orientation changed (i.e. ad view will change orientation if device orientation change); NO otherwise.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/adView:allowsOrientationChange:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/adView:forcesOrientation:</TokenIdentifier>
+			<Abstract type="html">Notification for the application that ad (creative) within the ad view forces orientation of the ad view regardless of the device orientation.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)adView:(AFAdView *)adView forcesOrientation:(UIInterfaceOrientationMask)orientation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView that received MRAID command.</Abstract>
+				</Parameter><Parameter>
+					<Name>orientation</Name>
+					<Abstract type="html">The forced orientation.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/adView:forcesOrientation:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/adViewWillExpand:</TokenIdentifier>
+			<Abstract type="html">Notification for the application that the ad view will expand to full screen view.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)adViewWillExpand:(AFAdView *)adView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView that will expand.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the application wants to allow expanding of the ad view; NO otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/adViewWillExpand:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/adViewDidExpand:</TokenIdentifier>
+			<Abstract type="html">Notification for the application that the ad view expanded to full screen view.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)adViewDidExpand:(AFAdView *)adView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView that expanded to full screen.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/adViewDidExpand:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/adViewWillCloseExpandedView:</TokenIdentifier>
+			<Abstract type="html">Notification for the application that the ad will close the expanded, full screen view.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)adViewWillCloseExpandedView:(AFAdView *)adView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView that will close (will change size to default/initial).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/adViewWillCloseExpandedView:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/adViewDidCloseExpandedView:</TokenIdentifier>
+			<Abstract type="html">Notification for the application that the ad did close the expanded, full screen view.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)adViewDidCloseExpandedView:(AFAdView *)adView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView that had closed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/adViewDidCloseExpandedView:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/adView:willCreateCalendarEvent:</TokenIdentifier>
+			<Abstract type="html">Notification for the application that the ad wants to create a calenar event.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)adView:(AFAdView *)adView willCreateCalendarEvent:(EKEvent *)event</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView that wants to create calendar event.</Abstract>
+				</Parameter><Parameter>
+					<Name>event</Name>
+					<Abstract type="html">The event that ad view wants to create.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the application wants to allow creating calendar event; NO otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/adView:willCreateCalendarEvent:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/adViewDidDismissCalendarEventCreator:</TokenIdentifier>
+			<Abstract type="html">Notification for the application that the calendar event creation screen was dismissed.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)adViewDidDismissCalendarEventCreator:(AFAdView *)adView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView object that brought the calendar event creator dialog.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/adViewDidDismissCalendarEventCreator:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/adView:failedCreatingCalendarEvent:</TokenIdentifier>
+			<Abstract type="html">Notification for the application that the ad view failed to create a calendar event.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)adView:(AFAdView *)adView failedCreatingCalendarEvent:(NSString *)errorMessage</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adView</Name>
+					<Abstract type="html">The AFAdView that tried to create calendar event.</Abstract>
+				</Parameter><Parameter>
+					<Name>errorMessage</Name>
+					<Abstract type="html">Error message.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/adView:failedCreatingCalendarEvent:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/shallSupportSMS</TokenIdentifier>
+			<Abstract type="html">Implement this method if you want to override the detected SMS support of the device.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)shallSupportSMS</Declaration>
+			
+			<ReturnValue><Abstract type="html">If YES is returned, the ad view checks also if the device supports SMS, and returns the result of the test to the ad;
+if NO is returned, the ad view does not inspect the device for SMS support and returns NO to the javascript (creative).</Abstract></ReturnValue>
+			<Anchor>//api/name/shallSupportSMS</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/shallSupportTel</TokenIdentifier>
+			<Abstract type="html">Implement this method if you want to override the detected phone support of the device.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)shallSupportTel</Declaration>
+			
+			<ReturnValue><Abstract type="html">If YES is returned, the ad view checks also if the device supports phone, and returns the result of the test to the ad;
+if NO is returned, the ad view does not inspect the device for phone support and returns NO to the javascript (creative).</Abstract></ReturnValue>
+			<Anchor>//api/name/shallSupportTel</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/shallSupportCalendar</TokenIdentifier>
+			<Abstract type="html">Implement this method if you want to override the detected calendar support of the device.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)shallSupportCalendar</Declaration>
+			
+			<ReturnValue><Abstract type="html">If YES is returned, the ad view checks also if the device supports calendar, and returns the result of the test to the ad;
+if NO is returned, the ad view does not inspect the device for calendar support and returns NO to the javascript (creative).</Abstract></ReturnValue>
+			<Anchor>//api/name/shallSupportCalendar</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/shallSupportStorePicture</TokenIdentifier>
+			<Abstract type="html">Implement this method if you want to override the detected picture storage support of the device.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)shallSupportStorePicture</Declaration>
+			
+			<ReturnValue><Abstract type="html">If YES is returned, the ad view checks also if the device supports picture storage, and returns the result of the test to the ad;
+if NO is returned, the ad view does not inspect the device for picture storage support and returns NO to the javascript (creative).</Abstract></ReturnValue>
+			<Anchor>//api/name/shallSupportStorePicture</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFAdViewDelegate/shallSupportInlineVideo</TokenIdentifier>
+			<Abstract type="html">Implement this method if you want to override the detected video support of the device.</Abstract>
+			<DeclaredIn>AFAdViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)shallSupportInlineVideo</Declaration>
+			
+			<ReturnValue><Abstract type="html">If YES is returned, the ad view checks also if the device supports video play, and returns the result of the test to the ad;
+if NO is returned, the ad view does not inspect the device for video play support and returns NO to the javascript (creative).</Abstract></ReturnValue>
+			<Anchor>//api/name/shallSupportInlineVideo</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
