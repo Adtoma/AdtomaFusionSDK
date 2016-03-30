@@ -11,11 +11,11 @@ Pod::Spec.new do |s|
   s.platform              = :ios
   s.source                = { :git => "https://github.com/mysza/AdtomaFusionSDK.git", :branch => 'master' }
   s.requires_arc          = true
-  s.source_files          = 'AdtomaFusionSDKHeaders/*.h'
-  s.vendored_library      = 'AdtomaFusionSDK.a'
+  s.source_files          = 'Headers/*.h'
+  s.vendored_library      = 'libAdtomaFusionSDK.a'
 #  s.preserve_paths        = 'AdtomaFusionSDK.a'
-  s.public_header_files   = 'AdtomaFusionSDKHeaders/*.h'
-  s.resources             = 'AdtomaFusionSDK.bundle'
+  s.public_header_files   = 'Headers/*.h'
+  s.resources             = 'libAdtomaFusionSDK.bundle'
 #  s.xcconfig              = { 'LIBRARY_SEARCH_PATHS' => "'${PODS_ROOT}/AdtomaFusionSDK/'" }
   s.frameworks            = 'CoreFoundation', 'CoreGraphics', 'UIKit', 'Foundation'
 end
