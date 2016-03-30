@@ -41,29 +41,24 @@ Just like any other library:
 The following code presents sample usage of the AFAdView in the application. This code is an implementation of the UIViewController's viewDidLoad methd.
 
 ```objectivec
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.fusionAdView = [[AFAdView alloc] init];
-    [self.view addSubview:self.fusionAdView];
-
-    self.fusionAdView.translatesAutoresizingMaskIntoConstraints = NO;
+    // set yourself as a delegate
     self.fusionAdView.delegate = self;
-    self.fusionAdView.adServerAddress = @"fusion.expressen.se";
-    self.fusionAdView.adMediaZone = @"exp.mobil-expressen.mobilsajt.gt.etta";
-    self.fusionAdView.adLayout = @"hyb_etta";
-    self.fusionAdView.adSpaceName = @"m_topp";
-
-    NSString *test = @"val1 val2 val3";
-    NSArray *strings = [test componentsSeparatedByString:@" "];
-    [self.fusionAdView setFusionParameter:@"stringParam" withValues:strings reloadIfNeeded:YES];
-    NSArray *ints = @[@1, @2, @3];
-    [self.fusionAdView setFusionParameter:@"intParam" withValues:ints reloadIfNeeded:YES];
-    [self.fusionAdView setFusionParameter:@"singleParam" withValue:@"testValue" reloadIfNeeded:YES];
-
-    // load ad
-    [_fusionAdView loadAd];
+    
+    // set up server address, media zone, layout and space name
+    self.fusionAdView.adServerAddress = @"se-02.adtomafusion.com";
+    self.fusionAdView.adMediaZone = @"mobilesdkdemo.demo";
+    self.fusionAdView.adLayout = @"MobSDK_1";
+    self.fusionAdView.adSpaceName = @"SDK_top";
+    
+    // example of setting custom parameters
+    [self.fusionAdView setFusionParameter:@"singleValueParam" withValue:@"paramValue" reloadIfNeeded:YES];
+    [self.fusionAdView setFusionParameter:@"multipleValuesParam" withValues:[NSArray arrayWithObjects:@"val1", @"val2", @"val3", nil] reloadIfNeeded:YES];
+    
+    // set to NO if no close indicator should be visible
+    self.fusionAdView.showCloseIndicatorOnBannerAds = YES;
 }
 ```
 
