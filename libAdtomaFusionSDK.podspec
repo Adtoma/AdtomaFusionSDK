@@ -7,15 +7,14 @@ Pod::Spec.new do |s|
                           DESC
   s.homepage              = "http://www.adtoma.com"
   s.license               = { :type => 'Commercial', :file => 'LICENSE.md' }
+  s.license               = { :type => 'MIT', :file => 'LICENSE.md' }
   s.author                = { "Adtoma AB" => "support@adtoma.com" }
   s.platform              = :ios
   s.source                = { :git => "https://github.com/mysza/AdtomaFusionSDK.git", :branch => 'master' }
   s.requires_arc          = true
   s.source_files          = 'Headers/*.h'
   s.vendored_library      = 'libAdtomaFusionSDK.a'
-#  s.preserve_paths        = 'AdtomaFusionSDK.a'
   s.public_header_files   = 'Headers/*.h'
   s.resources             = 'libAdtomaFusionSDK.bundle'
-#  s.xcconfig              = { 'LIBRARY_SEARCH_PATHS' => "'${PODS_ROOT}/AdtomaFusionSDK/'" }
-  s.frameworks            = 'CoreFoundation', 'CoreGraphics', 'UIKit', 'Foundation'
+  s.frameworks            = 'CoreFoundation', 'UIKit', 'Foundation', 'EventKit', 'MessageUI', 'MobileCoreServices', 'CoreTelephony', 'MediaPlayer', 'CoreLocation'
 end

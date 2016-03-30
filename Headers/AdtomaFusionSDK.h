@@ -14,11 +14,9 @@
 #import <CoreTelephony/CTCarrier.h>
 #import <MessageUI/MessageUI.h>
 #import <EventKit/EventKit.h>
-#import <QuartzCore/QuartzCore.h>
 #import <MessageUI/MessageUI.h>
 #import <MessageUI/MFMailComposeViewController.h>
 #import <MessageUI/MFMessageComposeViewController.h>
-#import <Twitter/Twitter.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 
 #import <AdtomaFusionSDK/AFAdView.h>
