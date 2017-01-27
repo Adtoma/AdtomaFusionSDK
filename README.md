@@ -13,7 +13,7 @@ To learn more about MRAID, please visit [Mobile Rich Media Ad Interface Definiti
 1. Add the pod `AdtomaFusionSDK` to your [Podfile](http://guides.cocoapods.org/using/the-podfile.html).
 
 ```ruby
-pod 'AdtomaFusionSDK'
+pod 'AdtomaFusionSDK', :git => 'https://github.com/Adtoma/AdtomaFusionSDK.git'
 ```
 
 1. Run `pod install` from Terminal, then open your app's `.xcworkspace` file to launch Xcode.
